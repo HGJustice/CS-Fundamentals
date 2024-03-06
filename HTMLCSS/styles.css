@@ -1,0 +1,605 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+.home {
+    background-color: rgb(38, 51, 93);
+    z-index: -2;
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    background-color: rgb(38, 51, 93);
+    height: 100px;
+    padding-top: 20px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    position: relative;
+}
+
+.navBar__header {
+    padding-left: 170px;
+    font: 700 24px/32px inherit;
+    color: white;
+    text-align: left;
+    letter-spacing: 0.1px;
+}
+
+.navBar__navigationLinks {
+    list-style-type: none;
+    display: flex;
+    padding-right: 400px;
+    gap: 15px;
+}
+
+.navBar__pagesLinks {
+    color: white;
+    text-decoration: none;
+    font: 700 14px 'Montserrat';
+}
+
+.navBar__loginButton{
+    color: white;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    right: 150px;
+    font: 700 14px 'Montserrat'
+}
+
+.navBar__joinButton{
+    font: 700 14px 'Montserrat';
+    border-radius: 5px;
+    background: rgb(255, 101, 81);
+    color: white;
+    width: 137px;
+    height: 52px;
+    position: relative;
+    right: 180px;
+}
+
+.home__content{
+    width: 573px;
+    height: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-self: flex-end;
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+}
+
+.home__header{
+    color: rgb(255, 255, 255);
+    font: 700 58px/80px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.home__description{
+    color: rgb(255, 255, 255);
+    font: 400 20px/30px 'Montserrat';
+    letter-spacing: 0.2px;
+}
+
+.home__quoteButton{
+    font: 700 14px 'Montserrat';
+    border-radius: 5px;
+    background: rgb(255, 101, 81);
+    color: white;
+    width: 193px;
+    height: 52px;
+    padding: 15px 40px;
+}
+
+.home__learnButton{
+    position: relative;
+    left: 200px;
+    bottom: 60px;
+    width: 193px;
+    height: 52px;
+    border-color: rgb(255, 101, 81);
+    background: transparent;
+    border-radius: 5px;
+    color:  rgb(255, 101, 81);
+    font-family: 'Montserrat';
+    padding: 15px 40px;
+}
+
+.home__images{
+    margin-bottom: 50px;
+}
+
+.home__image1{
+    width: 424.41px;
+    height: 516.8px;
+    border-radius: 34.38px;
+    position: relative;
+    left: 200px;
+    z-index: 2;
+    object-fit: cover;
+}
+
+.home__image2{
+    border-radius: 34.38px;
+    width: 460.5px;
+    height: 450.4px;
+    position: relative;
+    z-index: 1;
+    right: 40px;
+    bottom: 65px;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .home__image1 {
+        width: 212px; 
+        height: 258px;
+        left: 100px;
+        top: 110px;
+    }
+
+    .home__image2 {
+        width: 230px;
+        height: 225px;
+        left: 170px;
+        bottom: 153px;
+    }
+}
+
+
+
+.content__subheading{                                     
+    font: 700 16px/24px 'Montserrat';
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: rgb(255, 101, 81);
+}
+
+.content__header{
+    color: rgb(37, 43, 66);
+    font: 700 40px/50px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.content__sectionDescription{
+    color: rgb(115, 115, 115);
+    font: 400 14px/20px 'Montserrat';                                           
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.content__description{
+    color: rgb(115, 115, 115);
+    font: 400 14px/20px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}   
+
+
+
+.most-popular-coursers{
+    margin-top: 200px;
+}
+
+.most-popular-coursers__content{
+    padding: 0 0 50px 227px
+}
+
+.most-popular-coursers__options{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.most-popular-coursers__header{
+    color: rgb(37, 43, 66);
+    font: 700 16px/24px 'Montserrat';
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+
+.most-popular-coursers__description{
+    color: rgb(115, 115, 115);
+    font: 400 14px/20px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.most-popular-coursers__courses{
+    width: 230px;
+    height: 292px;
+    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+    padding: 35px 40px;
+}
+
+.most-popular-coursers__courses--thirdCourse{
+    background: rgb(255, 101, 81);
+    color: white ;
+}
+.most-popular-coursers__courses--thirdCourseHeader {
+    color: white;
+}
+
+.most-popular-coursers__courses--thirdCourseContent {
+    color: white;
+}
+
+.most-popular-coursers__courses:nth-child(even){
+    margin-top: 75px;
+}
+
+
+
+.resrouces-section {
+    margin-top: 100px;
+}
+
+.resrouces-section__content {
+    padding: 0 0 50px 227px;
+}
+
+.resrouces-section__options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+.resrouces-section__ratingWrapper{
+    border-radius: 20px;
+    background: rgb(38, 51, 93);
+    display: inline-block;
+    color: white;
+    width: 50px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    position: absolute; 
+    bottom: -48px;
+    right: 60px
+}
+
+.resrouces-section__componenet {
+    width: 238px;
+    height: 300px;
+    flex-direction: column;
+    margin-bottom: 225px;
+    position: relative;
+}
+
+.resrouces-section__subheading{
+    color: rgb(255, 101, 81);
+    font: 700 14px/24px 'Montserrat';
+    letter-spacing: 0.2px;
+}
+
+.resrouces-section__images {
+    width: 238px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.resrouces-section__sale-icon{
+    position: relative;
+    bottom: 280px;
+    left: 20px;
+}
+
+.resrouces-section__first-icon{
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+
+.resrouces-section__second-icon{
+    position: relative;
+    bottom: 50px;
+    left: 55px;
+}
+
+.resrouces-section__third-icon{
+    position: relative;
+    bottom: 50px;
+    left: 60px;
+}
+
+.resrouces-section__header{
+    color: rgb(37, 43, 66);
+    font: 700 16px/24px 'Montserrat';
+    letter-spacing: 0.1px;
+    padding: 10px 0;
+}
+
+.resrouces-section__sales{
+    color: rgb(115, 115, 115);
+    font: 700 14px/24px 'Montserrat';
+    letter-spacing: 0.2px;
+    padding: 10px 0;
+}
+
+.resrouces-section__saleIcons {
+    padding-right: 10px;
+}
+
+.resrouces-section__oldPrice{
+    color: rgb(189, 189, 189);
+    font: 700 16px/24px 'Montserrat';
+    letter-spacing: 0.1px;
+}
+
+.resrouces-section__newPrice{
+    color: rgb(36, 53, 161);
+    font: 700 16px/24px 'Montserrat';
+    letter-spacing: 0.1px;
+}
+
+.resrouces-section__button{
+    border: 1px solid rgb(255, 101, 81);
+    border-radius: 37px;
+    padding: 10px 20px;
+    background: transparent;
+    width: 141.14px;
+    height: 44px;
+    font-family: 'Montserrat';
+    color: rgb(255, 101, 81);
+    margin: 10px 0px;
+}
+
+
+
+.payment-plans{
+    margin-top: 100px;
+}
+
+.payment-plans__content{
+    padding: 0 0 50px 227px
+}   
+
+.payment-plans__button{
+    border-radius: 5px;
+    background: rgb(255, 101, 81);
+    margin: 35px 0px;
+    padding: 15px 40px;
+    color: white;
+    width: 243px;
+    height: 52px;
+    font: 700 14px/22px 'Montserrat';
+    letter-spacing: 0.2px;
+}
+
+.payment-plans__header{
+    color: rgb(37, 43, 66);
+    font: 700 24px/32px 'Montserrat';
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+
+.payment-plans__description{
+    color: rgb(115, 115, 115);
+    font: 700 14px/24px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: left; 
+}
+
+.payment-plans__price{
+    color: rgb(255, 101, 81);
+    font: 700 40px/50px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.payment-plans__month{
+    color: rgb(142, 194, 242);
+    font: 700 14px/24px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.payment-plans__benefits{
+    color: rgb(37, 43, 66);
+    font: 700 14px/24px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.payment-plans__columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    position: relative;
+    gap: 40px;
+}
+
+.payment-plans__individualPlans{
+    width: 328px;
+    height: 937px;
+    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.payment-plans__icons {
+    padding-right: 10px;
+}
+
+.new-icon{
+    position: absolute;
+    bottom: 890px;
+    left: 280px;
+}
+
+
+
+.testominals__content{
+    padding: 200px 0 50px 227px;
+}
+
+.testominals__description{
+    color: rgb(115, 115, 115);
+    font: 400 14px/20px 'Montserrat';   
+    letter-spacing: 0.2px;
+    text-align: center;
+    word-wrap: break-word;
+    width: 320px;
+}   
+
+.testominals__nameHeader{
+    color: rgb(37, 43, 66);
+    font: 700 16px/24px 'Montserrat';
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+
+.testominals__jobTitle{
+    color: rgb(115, 115, 115);
+    font: 700 14px/24px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+
+.testominals__reviews{
+    display: flex;
+    flex: 1;
+}
+
+.testominals__imgages {
+    border-radius: 100%;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin: 50px 0 30px 0;
+} 
+
+.testominals__reviews article {
+    margin-top: 25px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+
+
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(38, 51, 93);
+    height: 594px;
+    margin-top: 150px;
+}
+
+.newsletter__form{
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter__form input[type="text"]{
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    background: rgb(249, 249, 249);
+    width: 571px;
+    height: 58px;
+}
+
+.newsletter__formButton{
+    width: 117px;
+    height: 58px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 0px 5px 5px 0px;
+    background: rgb(255, 101, 81);
+    position: relative;
+    right: 4px;
+    top: 0.3px;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.newletter__subheading{
+    color: rgb(255, 101, 81);
+    font: 700 14px/24px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.newletter__header{
+    color: rgb(255, 255, 255);
+    font: 700 40px/50px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.newletter__descrpition{
+    color: rgb(255, 255, 255);
+    font: 400 14px/20px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: center;
+    word-wrap: break-word;
+    width: 400px;
+}
+
+
+
+.footer{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 272px;
+}
+
+.footer__header{
+    color: rgb(37, 43, 66);
+    font: 700 16px/24px 'Montserrat';
+    letter-spacing: 0.1px;
+    text-align: left;
+    padding-top: 45px;
+}
+
+.footer__content{
+    color: rgb(115, 115, 115);
+    font: 700 14px/24px 'Montserrat';
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin: 10px 0px;
+}
+
+.footer__icons {
+    padding-right: 10px;
+}

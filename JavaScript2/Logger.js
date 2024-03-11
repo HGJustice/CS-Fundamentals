@@ -12,9 +12,9 @@ class TableLogger extends BaseLogger {
 
 class DateTimeLogger extends TableLogger {
   log(...dataToBeLogged) {
-    this.dateTime = new Date();
-    let time = this.dateTime.toLocaleTimeString();
-    let date = this.dateTime.toLocaleDateString();
+    const dateTime = new Date();
+    const time = dateTime.toLocaleTimeString();
+    const date = dateTime.toLocaleDateString();
     let dateTimeData = [`${date}, ${time}`, ...dataToBeLogged];
     return super.log(...dateTimeData);
   }

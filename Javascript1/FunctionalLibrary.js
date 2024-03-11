@@ -37,7 +37,6 @@ function first(arr) {
 function last(arr) {
   return arr.at(-1);
 }
-
 function skip(arr, numAmountToSkip) {
   return arr.slice(numAmountToSkip, arr.length);
 }
@@ -51,7 +50,7 @@ function asChain(arr) {
     array: arr,
 
     skip: function (numAmountToSkip) {
-      this.array = arr.slice(numAmountToSkip, arr.length);
+      this.array = this.array.slice(numAmountToSkip, arr.length);
       return this;
     },
 
@@ -67,3 +66,19 @@ function asChain(arr) {
 
   return chain;
 }
+
+module.exports = {
+  isArray,
+  isBoolean,
+  isDate,
+  isNumber,
+  isString,
+  isFunction,
+  isUndefined,
+  isNull,
+  first,
+  last,
+  skip,
+  take,
+  asChain,
+};

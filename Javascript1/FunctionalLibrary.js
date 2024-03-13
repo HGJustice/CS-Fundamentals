@@ -50,7 +50,7 @@ function asChain(arr) {
     array: arr,
 
     skip: function (numAmountToSkip) {
-      this.array = this.array.slice(numAmountToSkip, arr.length);
+      this.array = this.array.slice(numAmountToSkip, this.array.length);
       return this;
     },
 
